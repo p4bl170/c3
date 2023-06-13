@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background-color: #dddddd;
+}
+
+nav {
+    color: white;
+    width: 100vw;
+    height: 16vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #bcbcbc;
+    left: 0;
+    top: 16vh;
+    padding: 2vw;
+    width: 100vw;
+}
+
+nav div {
+    display: flex;
+    width: 24.11%;
+    justify-content: space-between;
+}
+
+nav,
+header,
+main {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 105vh;
+    margin-bottom: 20px;
+}
+
+section div {
+    width: 45.83%;
+}
+
+section div img,
+video {
+    width: 100%
+}
+
+header {
+    height: 43vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+h1,
+header h3,
+nav a,
+header a {
+    line-height: 125%;
+}
+
+nav h1 {
+    font-weight: 500;
+}
+
+header h1 {
+    font-family: 'Prompt', sans-serif;
+}
+
+header h3 {
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 5px;
+}
+
+header p {
+    font-size: 20;
+}
+
+header a,
+nav a {
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header a {
+    background-color: black;
+}
+
+nav span {
+    display: none;
+}
+
+.icon-menu::before {
+    color: white;
+    font-size: 3vw;
+}
+
+span.icon-menu:hover {
+    cursor: pointer;
+}
+
+section div img {
+    transition: transform 0.3s;
+}
+
+section div img:hover {
+    opacity: 0.6;
+    transform: scale(0.95);
+}
+
+nav h1:hover {
+    animation: rotacion 0.3s alternate infinite;
+}
+
+@keyframes rotacion {
+    0% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(2deg);
+    }
+}
+
+footer {
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+nav a:hover {
+    opacity: 0.6;
+  }  
+
+@media (max-width: 1200px) {
+    nav div {
+        width: 50%;
+    }
+
+    main section {
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    section {
+        height: auto;
+    }
+
+    section div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav div {
+        display: none;
+    }
+
+    nav span {
+        display: inline;
+    }
+}
